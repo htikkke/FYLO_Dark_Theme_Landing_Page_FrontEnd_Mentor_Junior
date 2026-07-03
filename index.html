@@ -10,40 +10,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | fylo-dark-theme-landing-junior</title>
   </head>
-  <body class="w-full min-h-screen">
+  <body class="w-full min-h-screen bg-main-background">
     <div
       id="main-container"
       class="w-full min-h-screen grid grid-rows-[max-content_auto_auto_auto_auto] bg-main-background relative"
     >
       <section
         id="nav-section"
-        class="h-auto flex justify-between items-center pr-20 pl-20 pt-10 bg-testimonials-background"
+        class="h-auto flex justify-between items-center pr-20 pl-20 pt-10 bg-testimonials-background max-[430px]:pr-5 max-[430px]:pl-5"
       >
-        <img src="/src/images/logo.svg" class="w-40 h-13" />
-        <nav class="flex gap-10">
+        <img src="/src/images/logo.svg" class="w-40 h-13 max-[430px]:w-25 max-[430px]:h-8" />
+        <nav class="flex gap-10 max-[430px]:gap-5">
           <a
             href="#"
-            class="text-white text-lg cursor-pointer hover:border-b hover:border-white transition-all"
+            class="text-white text-lg cursor-pointer hover:border-b hover:border-white transition-all max-[430px]:text-base"
             >Features</a
           >
           <a
             href="#"
-            class="text-white text-lg hover:border-b hover:border-white transition-all"
+            class="text-white text-lg hover:border-b hover:border-white transition-all
+            max-[430px]:text-base"
             >Team</a
           >
           <a
             href="#"
-            class="text-white text-lg hover:border-b hover:border-white transition-all"
+            class="text-white text-lg hover:border-b hover:border-white transition-all
+            max-[430px]:text-base"
             >Sign in</a
           >
         </nav>
       </section>
       <section
         id="hero-section"
-        class="h-auto flex flex-col items-center justify-evenly pb-10 pt-10 gap-10 bg-[url(/src/images/bg-curvy-desktop.svg)] bg-no-repeat bg-bottom bg-contain bg-testimonials-background"
+        class="h-auto flex flex-col items-center justify-evenly pb-10 pt-10 gap-10 bg-[url(/src/images/bg-curvy-desktop.svg)] bg-no-repeat bg-bottom bg-contain bg-testimonials-background max-[430px]:pr-8 max-[430px]:pl-8 max-[430px]:bg-[url(/src/images/bg-curvy-mobile.svg)]"
       >
         <img src="/src/images/illustration-intro.png" />
-        <h1 class="text-white text-5xl text-center font-bold">
+        <h1 class="text-white text-5xl text-center font-bold max-[430px]:text-3xl">
           All your files in one secure location, accessible anywhere.
         </h1>
         <p class="text-white text-center text-sm">
@@ -52,14 +54,14 @@
           friends family, and co-workers.
         </p>
         <button
-          class="text-white bg-button-background py-3 px-15 rounded-3xl text-sm font-bold cursor-pointer hover:bg-hover-to-action active:scale-95 active:shadow-inner transition-all"
+          class="text-white bg-button-background py-3 px-15 rounded-3xl text-sm font-bold cursor-pointer hover:bg-hover-to-action active:scale-95 active:shadow-inner transition-all max-[430px]:text-base"
         >
           Get Started
         </button>
       </section>
       <section
         id="information-section"
-        class="bg-main-background grid grid-cols-2 pt-10 gap-x-0 gap-y-20"
+        class="bg-main-background grid grid-cols-2 pt-10 gap-x-0 gap-y-20 max-[430px]:grid-cols-1"
       >
         <div class="flex flex-col items-center gap-4">
           <img src="/src/images/icon-access-anywhere.svg" />
@@ -102,7 +104,8 @@
       </section>
       <section
         id="productive-session"
-        class="bg-main-background grid grid-cols-2 pt-20 pr-20 pl-20 gap-10"
+        class="bg-main-background grid grid-cols-2 pt-20 pr-20 pl-20 gap-10
+        max-[430px]:grid-cols-1 max-[430px]:pb-10 max-[430px]:pr-10 max-[430px]:pl-10"
       >
         <div>
           <img src="/src/images/illustration-stay-productive.png" />
@@ -155,11 +158,12 @@
       </section>
       <section
         id="comments-session"
-        class="bg-main-background flex flex-row pt-20 pb-20 gap-10 pr-20 pl-20 relative"
+        class="bg-main-background flex flex-row pt-20 pb-20 gap-10 pr-20 pl-20 relative
+        max-[1025px]:pr-8 max-[1025px]:pl-8 max-[1025px]:pb-8 max-[430px]:flex-col"
       >
         <div
           class="bg-testimonials-background pr-10 pl-10 pt-10 pb-2 h-60 shadow-lg shadow-black z-10
-          hover:scale-105 transition-all"
+          hover:scale-105 transition-all max-[1025px]:h-auto"
         >
           <p class="text-white text-lg">
             Fylo has improved our team productivity by an order of magnitude.
@@ -182,7 +186,7 @@
         </div>
         <div
           class="bg-testimonials-background pr-10 pl-10 pt-10 pb-2 h-60 shadow-lg shadow-black
-          hover:scale-105 transition-all"
+          hover:scale-105 transition-all max-[1025px]:h-auto"
         >
           <p class="text-white text-lg">
             Fylo has improved our team productivity by an order of magnitude.
@@ -205,7 +209,7 @@
         </div>
         <div
           class="bg-testimonials-background pr-10 pl-10 pt-10 pb-2 h-60 shadow-lg shadow-black
-          hover:scale-105 transition-all"
+          hover:scale-105 transition-all max-[1025px]:h-auto"
         >
           <p class="text-white text-lg">
             Fylo has improved our team productivity by an order of magnitude.
@@ -233,43 +237,44 @@
       </section>
       <section
         id="footer-section"
-        class="mt-80 bg-footer-background flex flex-row justify-between pr-16 pl-16 pt-32 pb-32 items-center"
+        class="mt-80 bg-footer-background flex flex-row justify-between pr-16 pl-16 pt-32 pb-32 max-[1025px]:pr-8 max-[1025px]:pl-8 max-[430px]:flex-col
+        max-[430px]:gap-10 max-[430px]:pb-10"
       >
         <div class="flex flex-col gap-5">
-          <img src="/src/images/logo.svg" class="w-36" />
-          <div class="flex gap-5">
-            <img src="/src/images/icon-location.svg" class="w-4 h-5" />
-            <p class="text-white">
+          <img src="/src/images/logo.svg" class="w-36 max-[1025px]:w-27" />
+          <div class="flex gap-5 max-[1025px]:gap-2">
+            <img src="/src/images/icon-location.svg" class="w-4 h-5 max-[1025px]:w-2 max-[1025px]:h-3" />
+            <p class="text-white max-[1025px]:text-sm">
               Lorem ipsum dolor sit amet, consectetur<br />
               adipiscing elit, sed do eiusmod tempor<br />
               incididunt ut labore et dolore magna aliqua
             </p>
           </div>
         </div>
-        <div class="flex flex-col gap-4">
-          <div class="flex gap-5 items-center justify-center">
+        <div class="flex flex-col justify-end gap-4 max-[430px]:items-start">
+          <div class="flex gap-5 max-[1025px]:gap-3">
             <img src="/src/images/icon-phone.svg" class="h-4" />
-            <p class="text-white">+1-543-123-4567</p>
+            <p class="text-white max-[1025px]:text-sm">+1-543-123-4567</p>
           </div>
-          <div class="flex gap-5 items-center justify-center">
+          <div class="flex gap-5 max-[1025px]:gap-3">
             <img src="/src/images/icon-email.svg" class="h-4" />
-            <p class="text-white">example@fylo.com</p>
+            <p class="text-white max-[1025px]:text-sm">example@fylo.com</p>
           </div>
         </div>
-        <div class="flex gap-12">
+        <div class="flex items-start gap-12 max-[1025px]:gap-5 max-[770px]:flex-col">
           <div class="text-white flex flex-col gap-2">
-            <a href="#" class="hover:font-bold transition-all"> About Us</a>
-            <a href="#" class="hover:font-bold transition-all"> Jobs</a>
-            <a href="#" class="hover:font-bold transition-all"> Press</a>
-            <a href="#" class="hover:font-bold transition-all"> Blog</a>
+            <a href="#" class="hover:font-bold transition-all max-[1025px]:text-sm"> About Us</a>
+            <a href="#" class="hover:font-bold transition-all max-[1025px]:text-sm"> Jobs</a>
+            <a href="#" class="hover:font-bold transition-all max-[1025px]:text-sm"> Press</a>
+            <a href="#" class="hover:font-bold transition-all max-[1025px]:text-sm"> Blog</a>
           </div>
           <div class="text-white flex flex-col gap-2">
-            <a href="#" class="hover:font-bold transition-all"> Contact Us</a>
-            <a href="#" class="hover:font-bold transition-all"> Terms</a>
-            <a href="#" class="hover:font-bold transition-all"> Privacy</a>
+            <a href="#" class="hover:font-bold transition-all max-[1025px]:text-sm"> Contact Us</a>
+            <a href="#" class="hover:font-bold transition-all max-[1025px]:text-sm"> Terms</a>
+            <a href="#" class="hover:font-bold transition-all max-[1025px]:text-sm"> Privacy</a>
           </div>
         </div>
-        <div class="flex flex-row gap-3">
+        <div class="flex flex-row items-center gap-3 max-[430px]:items-center max-[430px]:justify-center">
           <a
             href="#"
             class="flex items-center justify-center w-10 h-10 border-2 border-white rounded-full text-white hover:border-call-to-action hover:text-call-to-action transition-all duration-300 cursor-pointer"
@@ -316,22 +321,23 @@
       </section>
       <section
         id="login-session"
-        class="absolute bottom-80 left-80 bg-main-background p-20 shadow-lg shadow-black w-auto flex flex-col gap-5 items-center rounded-2xl"
+        class="absolute bottom-80 left-80 bg-main-background p-20 shadow-lg shadow-black w-auto flex flex-col gap-5 items-center rounded-2xl max-[1025px]:left-30 max-[1025px]:p-10 max-[770px]:left-8 max-[770px]:p-5 max-[770px]:bottom-110 max-[430px]:bottom-150 max-[430px]:left-0 max-[430px]:m-5"
       >
-        <p class="text-white text-3xl font-bold">Get early access today</p>
+        <p class="text-white text-3xl font-bold text-center">Get early access today</p>
         <p class="text-white text-center brightness-75">
           It only takes a minute to sign up and our free starter tier is
           extremely generous. If you have any<br />
           questions, our support team would be happy to help you.
         </p>
-        <div class="flex gap-3">
+        <div class="flex gap-3 max-[770px]:flex-col max-[430px]:w-full">
           <input
             type="text"
             placeholder="example@email.com"
-            class="bg-white h-10 w-xl rounded-2xl p-5"
+            class="bg-white h-10 w-xl rounded-2xl p-5 max-[430px]:w-full"
           />
           <button
-            class="text-white bg-button-background px-5 rounded-3xl cursor-pointer hover:bg-hover-to-action active:scale-95 active:shadow-inner transition-all"
+            class="text-white bg-button-background px-5 rounded-3xl cursor-pointer hover:bg-hover-to-action active:scale-95 active:shadow-inner transition-all
+            max-[770px]:py-2"
           >
             Get Started For Free
           </button>
