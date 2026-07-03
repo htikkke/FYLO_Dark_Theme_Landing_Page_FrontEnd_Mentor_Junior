@@ -7,4 +7,5 @@
   --color-call-to-action: hsl(176, 68%, 64%);
   --color-footer-background: hsl(216, 53%, 9%);
   --color-hover-to-action: hsl(199, 90%, 80%);
+  --color-error-color: hsl(0, 100%, 63%);
 }

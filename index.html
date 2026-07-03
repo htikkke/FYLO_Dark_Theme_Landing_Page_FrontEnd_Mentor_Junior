@@ -329,13 +329,18 @@
           extremely generous. If you have any<br />
           questions, our support team would be happy to help you.
         </p>
-        <div class="flex gap-3 max-[770px]:flex-col max-[430px]:w-full">
+        <div class="flex gap-3 max-[770px]:flex-col max-[770px]:gap-8 max-[430px]:w-full">
+        <div class="relative">
           <input
             type="text"
             placeholder="example@email.com"
+            id="email-input"
             class="bg-white h-10 w-xl rounded-2xl p-5 max-[430px]:w-full"
           />
+          <p id="error-alert" class="text-error-color absolute left-8 hidden">Please enter a valid email address</p>
+        </div>
           <button
+            id="submit-button"
             class="text-white bg-button-background px-5 rounded-3xl cursor-pointer hover:bg-hover-to-action active:scale-95 active:shadow-inner transition-all
             max-[770px]:py-2"
           >
